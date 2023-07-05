@@ -18,10 +18,22 @@ h1, nav {
     font-style: normal;
 }
 
+/* MENU STYLING ==================================================== */
+
 header {
+  padding: 20px;
+  border-bottom: #ED1C2C solid 2px;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+}
+.header-container {
+    display: flex;
     background-color: var(--primary-color);
     padding: 10px 0;
-    border-bottom: #ED1C2C solid 2px;
+    align-items: center;
 }
 
 nav {
@@ -31,29 +43,53 @@ nav {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-    color: #ED1C2C;
-    font-size: 48px;
-    margin: 10px 0;
+.logo {
+  padding: 0 20px;
 }
 
-nav a {
+.navlink {
     text-decoration: none;
     font-family: "itc-benguiat-condensed", sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #ED1C2C;
-    padding: 10px 20px;
-    margin: 0 10px
-}
-
-a:visited {
     color: white;
+    padding: 0 20px;
+    margin: 0 10px;
+    position: relative;
+    transition: all 0.4s;
 }
 
-a:hover {
-    color: #FCD900
+.navlink:hover {
+  color: #FCD900;
+}
+
+.navlink::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #FCD900;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.navlink:hover::after{
+  opacity: 1;
+
+}
+/* ============================================================= */
+
+/* HERO STYLING =============================================== */
+
+main > h1 {
+    text-align: center;
+    color: #ED1C2C;
+    font-size: 48px;
+    margin: 10px 0;
 }
 
 main > section.hero {
@@ -89,7 +125,7 @@ section.hero > button {
     cursor: pointer;
     transition: 300ms;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   section.hero > button:hover {
@@ -98,6 +134,8 @@ section.hero > button {
     transform: translateY(-4px);
     font-family: 'Nunito Sans', sans-serif;
   }
+
+/* ============================================================= */
 
   main p {
     font-family: 'Nunito Sans', sans-serif;
