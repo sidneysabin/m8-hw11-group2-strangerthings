@@ -1,3 +1,79 @@
+@import url(//db.onlinewebfonts.com/c/fb962b2dbef881f55c530db060f8c6b7?family=ITC+Benguiat);
+
+@font-face {font-family: "ITC Benguiat"; src: url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.eot"); src: url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.woff") format("woff"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.svg#ITC Benguiat") format("svg"); } 
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+
+h1{
+    font-size: 48px;
+}
+
+h1{
+    font-size: 32px;
+}
+
+h1,
+h2 {
+    font-family: 'ITC Benguiat';
+    color: #FF3333;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ffffff;
+}
+
+.flex-item1,
+.flex-item2,
+.flex-item3,
+.flex-item4,
+.flex-item5,
+.flex-item6,
+.flex-item7,
+.flex-item8,
+.flex-item9,
+.flex-item10,
+.flex-item11,
+.flex-item12 {
+    flex: 1;
+    background-color: #131326;
+    padding: 5px;
+    margin: 20px;
+    max-width: 250px;
+    min-height: 450px;
+}
+
+@media only screen and (max-width: 500px) {
+.flex-item1,
+.flex-item2,
+.flex-item3,
+.flex-item4,
+.flex-item5,
+.flex-item6,
+.flex-item7,
+.flex-item8,
+.flex-item9,
+.flex-item10,
+.flex-item11,
+.flex-item12 {
+    flex: 1 ;
+    background-color: #131326;
+    padding: 5px;
+    margin: 5px;
+    max-width: 500px;
+    max-height: 350px;
+}
+img {
+    float: left;
+    max-width: 100px;
+  }
+    
 body {
     background-color: #131326;
     font-size: 1.3rem;
