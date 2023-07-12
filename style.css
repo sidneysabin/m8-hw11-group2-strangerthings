@@ -154,3 +154,29 @@ main > section.trailer {
   align-items: center;
   padding: 20px;
 }
+
+iframe {
+  width: 100%;
+}
+
+@media all and (max-width: 481px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  article {
+    padding: 0 20px;
+  }
+
+  nav > * {
+    flex: 1 100%;
+  }
+
+  nav a {
+    order: 2;
+  }
+
+  nav img {
+    order: 1;
+  }
+}
