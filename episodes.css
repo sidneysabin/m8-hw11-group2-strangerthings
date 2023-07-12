@@ -124,3 +124,27 @@ footer {
     padding: 10px;
   }
 }
+
+h2 {
+  color: #ED1C2C;
+  transition: color 0.3s ease-in-out;
+}
+
+/* CSS for H2 Hover animation */
+
+h2:hover {
+  color: #Fcd900;
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
