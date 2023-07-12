@@ -80,3 +80,48 @@
     text-align: center;
     padding: 20px 20px;
   }
+
+
+/* Default styles */
+
+/* Existing CSS code */
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .container {
+    align-items: center;
+  }
+  
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .image {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
