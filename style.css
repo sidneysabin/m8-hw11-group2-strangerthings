@@ -37,7 +37,6 @@ a:hover {
 
 /* ============================================================= */
 
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -83,8 +82,6 @@ p {
     min-height: 450px;
 }
 
-
-
 @media only screen and (max-width: 500px) {
 
 .flex-item, {
@@ -100,6 +97,7 @@ img {
     max-width: 100px;
   }
 } 
+
 body {
     background-color: #131326;
     font-size: 1.3rem;
@@ -281,11 +279,6 @@ iframe {
   nav img {
     order: 1;
   }
-}
-=======
-    max-width: 250px;
-    align-items: center;
-}
 }
 
 /* IMAGE HOVER EFFECT ==================================================== */
