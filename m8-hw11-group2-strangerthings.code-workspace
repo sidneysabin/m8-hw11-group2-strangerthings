@@ -7,5 +7,7 @@
 			"path": "../../../Google Drive/m8-hw11-group2-strangerthings/Cast/images"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "m8-hw11-group2-strangerthings"
+	}
 }
