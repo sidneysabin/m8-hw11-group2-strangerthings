@@ -321,5 +321,155 @@ iframe {
         text-transform:uppercase
       }
     }
-    /* ============================================================= */
-  
+   
+/* Episode Page ============================================================= */
+
+/* Body styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: auto;
+  max-height: auto;
+}
+
+body {
+  background-color: #131326;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "itc-benguiat-condensed", sans-serif;
+  filter: drop-shadow(7px 5px 36px #000);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  padding: 48px 48px;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: #ED1C2C;
+}
+
+h3 {
+  color: #ED1C2C;
+  padding: 20px;
+font-size: 18px;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 19px;
+  color: white;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 20px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.image {
+  margin-left: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .image {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+h2 {
+  color: #ED1C2C;
+  transition: color 0.3s ease-in-out;
+}
+
+/* CSS for H2 Hover animation */
+
+h2:hover {
+  color: #Fcd900;
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Episode Page end ============================================================= */
