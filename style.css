@@ -179,10 +179,9 @@ iframe {
       order: 2;
     }
   
-    nav img {
+    .logo {
       order: 1;
       height: 100px;
-      width: 400px;
     }
   }
 
@@ -197,6 +196,7 @@ iframe {
 .cast-subheading {
     text-align: center;
     color: var(--secondary-color);
+    font-family: "itc-benguiat-condensed", sans-serif;
 }
 
 h3 {
@@ -210,6 +210,7 @@ p {
     color: white;
     text-align: center;
 }
+
 .flex-item {
     flex: 1;
     background-color: var(--primary-blue);
@@ -280,7 +281,7 @@ p {
         color: var(--light-blue);
         font-size: 16px;
         text-align: center;
-        font-family: 'ITC Benguiat';
+        font-family: "itc-benguiat-condensed", sans-serif;
         text-transform:uppercase
       }
     }
@@ -305,27 +306,26 @@ p {
     margin-right: 10px;
   }
 
-  .row__heading {
+.row__heading {
     text-align: center;
+    color: #ED1C2C;
+    transition: color 0.3s ease-in-out;
+    font-family: "itc-benguiat-condensed", sans-serif;
   }
-  .row__subheading {
+
+.row__subheading {
     text-align:center;
   }
-  .row__p {
+
+.row__p {
     text-align: center;
   }
 
-  .image {
+.image {
     margin-left: 0;
     margin-top: 10px;
     padding: 10px;
   }
-}
-
-h2 {
-  color: #ED1C2C;
-  transition: color 0.3s ease-in-out;
-}
 
 /* CSS for H2 Hover animation */
 
@@ -333,7 +333,3 @@ h2:hover {
   color: #Fcd900;
   animation: bounce 0.5s infinite;
 }
-
-
-
-/* Episode Page end ============================================================= */
