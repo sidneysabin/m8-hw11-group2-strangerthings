@@ -286,12 +286,6 @@ p {
     }
 
 /* EPISODES STYLING ============================================================= */
-
-.episode-subheading {
-    color: var(--link-hover);
-    font-family: "itc-benguiat-condensed", sans-serif;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -310,56 +304,36 @@ p {
     padding: 20px;
     margin-right: 10px;
   }
-  
-.image {
-    margin-left: 10px;
-    padding: 20px 20px 20px 20px;
-    align-items: center;
+
+  .row__heading {
+    text-align: center;
   }
-  
-.episode-image {
-    max-width: 100%;
-    max-height: 100%;
+  .row__subheading {
+    text-align:center;
   }
-  
-@media screen and (max-width: 768px) {
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    h1 {
-      font-size: 2rem;
-      padding: 20px 10px;
-      text-align: center;
-    }
-  
-    .container {
-      align-items: center;
-    }
-  
-    .row {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .text {
-      font-size: 1rem;
-      padding: 10px;
-      text-align: center;
-    }
-  
-    .image {
-      margin-left: 0;
-      margin-top: 10px;
-      padding: 10px;
-    }
+  .row__p {
+    text-align: center;
   }
-  
-  h2 {
-    color: var(--secondary-color);
-    transition: color 0.3s ease-in-out;
-    font-family: "itc-benguiat-condensed", sans-serif;
+
+  .image {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 10px;
   }
+}
+
+h2 {
+  color: #ED1C2C;
+  transition: color 0.3s ease-in-out;
+}
+
+/* CSS for H2 Hover animation */
+
+h2:hover {
+  color: #Fcd900;
+  animation: bounce 0.5s infinite;
+}
+
+
+
+/* Episode Page end ============================================================= */
