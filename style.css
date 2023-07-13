@@ -146,7 +146,7 @@ h1 {
     margin-top: 20px;
   }
   
-.home-text {
+.home-text, .episode-description {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 19px;
     color: white;
@@ -192,13 +192,18 @@ iframe {
 
 /* EPISODES STYLING ============================================================= */
 
+.episode-subheading {
+    color: var(--link-hover);
+    font-family: "itc-benguiat-condensed", sans-serif;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
 .row {
     display: flex;
     justify-content: center;
@@ -272,24 +277,6 @@ iframe {
     justify-content: center;
 }
 
-.cast-subheading {
-    font-size: 32px;
-    color: var(--secondary-color);
-    font-family: "itc-benguiat-condensed", sans-serif;
-    text-align: center;
-}
-
-h3 {
-    font-family: 'ITC Benguiat';
-    font-size: 24px;
-    color: var(--link-hover);
-}
-
-.episode-description {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #ffffff;
-}
-
 .flex-item {
     flex: 1;
     background-color: #154993;
@@ -299,7 +286,7 @@ h3 {
     min-height: 450px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
 
 .flex-item, {
     flex: 1 ;
@@ -309,14 +296,13 @@ h3 {
     max-width: 400px;
     max-height: 350px;
 }
-
 img {
-    float: left;
-    max-width: 100px;
-  }
-} 
+    max-width: 250px;
+    align-items: center;
+}
+}
 
-/* Image hover effect */
+/* IMAGE HOVER EFFECT ==================================================== */
 
 @media only screen and (min-width: 481px) {
     
@@ -327,15 +313,14 @@ img {
         left: 50%;
         transform: translate(-50%, -180%);
         -ms-transform: translate(-50%, -50%);
-      }
+    }
     
-      .image {
+    .image {
         opacity: 1;
         width: 100%;
         transition: .5s ease;
         -ms-transform: translate(-50%, -50%);
         backface-visibility: hidden;
-        opacity: 0.5;
         filter: alpha(opacity=40);
     }
     
@@ -356,3 +341,4 @@ img {
         text-transform:uppercase
       }
     }
+    /* ============================================================= */
