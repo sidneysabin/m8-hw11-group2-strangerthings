@@ -350,7 +350,11 @@ h1 {
   color: white;
   text-align: center;
 }
-
+h3 {
+  color: #ED1C2C;
+  padding: 10px 10px 10px;
+  font-size: 20px;
+}
 
 .container {
   display: flex;
