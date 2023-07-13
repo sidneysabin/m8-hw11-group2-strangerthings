@@ -2,7 +2,11 @@
 
 @font-face {font-family: "ITC Benguiat"; src: url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.eot"); src: url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.woff") format("woff"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.svg#ITC Benguiat") format("svg"); } 
 
-/* MENU STYLING ==================================================== */
+:root {
+    --primary-color: #131326;
+}
+
+/* NAVBAR STYLING ==================================================== */
 
 header {
     background-color: var(--primary-color);
