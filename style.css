@@ -28,7 +28,7 @@ nav a {
   font-style: normal;
   color: #ED1C2C;
   padding: 10px 20px;
-  margin: 0 10px
+  margin: 0 10pxhttp://127.0.0.1:3000/epi-assets/e4.jpg
 }
 
 a:visited {
@@ -449,6 +449,15 @@ footer {
   .text {
     font-size: 1rem;
     padding: 10px;
+    text-align: center;
+  }
+  .row__heading {
+    text-align: center;
+  }
+  .row__subheading {
+    text-align:center;
+  }
+  .row__p {
     text-align: center;
   }
 
