@@ -2,6 +2,40 @@
 
 @font-face {font-family: "ITC Benguiat"; src: url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.eot"); src: url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.woff") format("woff"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fb962b2dbef881f55c530db060f8c6b7.svg#ITC Benguiat") format("svg"); } 
 
+/* MENU STYLING ==================================================== */
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    border-bottom: #ED1C2C solid 2px;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "itc-benguiat-condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ED1C2C;
+    padding: 10px 20px;
+    margin: 0 10px
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #FCD900
+}
+
+/* ============================================================= */
 
 .flex-container {
     display: flex;
@@ -12,9 +46,11 @@
 
 h1{
     font-size: 48px;
+    text-align: center;
+    color: #FF3333;
 }
 
-h1{
+h2{
     font-size: 32px;
 }
 
@@ -22,27 +58,24 @@ h1,
 h2 {
     font-family: 'ITC Benguiat';
     color: #FF3333;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'ITC Benguiat';
+    font-size: 24px;
 }
 
 p {
     font-family: 'Nunito Sans', sans-serif;
     color: #ffffff;
+    text-align: center;
 }
 
-.flex-item1,
-.flex-item2,
-.flex-item3,
-.flex-item4,
-.flex-item5,
-.flex-item6,
-.flex-item7,
-.flex-item8,
-.flex-item9,
-.flex-item10,
-.flex-item11,
-.flex-item12 {
+.flex-item {
     flex: 1;
-    background-color: #131326;
+    background-color: #154993;
     padding: 5px;
     margin: 20px;
     max-width: 250px;
@@ -50,23 +83,13 @@ p {
 }
 
 @media only screen and (max-width: 500px) {
-.flex-item1,
-.flex-item2,
-.flex-item3,
-.flex-item4,
-.flex-item5,
-.flex-item6,
-.flex-item7,
-.flex-item8,
-.flex-item9,
-.flex-item10,
-.flex-item11,
-.flex-item12 {
+
+.flex-item, {
     flex: 1 ;
     background-color: #131326;
     padding: 5px;
     margin: 5px;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 350px;
 }
 img {
@@ -74,6 +97,7 @@ img {
     max-width: 100px;
   }
 } 
+
 body {
     background-color: #131326;
     font-size: 1.3rem;
@@ -257,6 +281,47 @@ iframe {
   }
 }
 
+/* IMAGE HOVER EFFECT ==================================================== */
+
+@media only screen and (min-width: 499px) {
+    
+    .middle {
+        transition: .4s ease;
+        opacity: 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -180%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    
+      .image {
+        opacity: 1;
+        width: 100%;
+        transition: .5s ease;
+        -ms-transform: translate(-50%, -50%);
+        backface-visibility: hidden;
+        opacity: 0.5;
+        filter: alpha(opacity=40);
+    }
+    
+    img:hover { 
+        opacity: 0.5;
+        filter: alpha(opacity=100);
+    }
+    
+    img:hover+ .middle {
+     opacity: 1;
+      }
+    
+    .hover-text {
+        color: #88d4e7;
+        font-size: 16px;
+        text-align: center;
+        font-family: 'ITC Benguiat';
+        text-transform:uppercase
+      }
+    }
+   
 /* Episode Page ============================================================= */
 
 /* Body styles */
@@ -342,9 +407,6 @@ footer {
   text-align: center;
   padding: 20px 20px;
 }
-
-
-
 
 /* Media queries */
 
