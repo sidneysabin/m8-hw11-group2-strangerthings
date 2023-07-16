@@ -120,9 +120,9 @@ button {
 }
 
 button:hover {
-    background-color: white;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
-    transform: translateY(-4px);
+    transform: translateY(-6px);
     font-family: 'Nunito Sans', sans-serif;
   }
 
@@ -308,9 +308,14 @@ footer {
       order: 2;
     }
   
+    .navlink {
+        margin: 10px 0;
+    }
+
     .logo {
-      order: 1;
-      height: 100px;
+      height: auto;
+      max-width: 100px;
+      width: 100%;
     }
     
     .container, .row {
@@ -354,7 +359,7 @@ footer {
     }
     
     h3 {
-        margin: 10px 0;
+        margin: 6px 0;
     }
 
    .image-container {
